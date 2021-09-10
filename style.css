@@ -1,0 +1,69 @@
+*{
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+}
+nav{
+     display: block;
+     background: white;
+}
+li{
+     list-style: none;
+     display: inline-block;
+     text-align: center;
+     margin-left: 5%;
+     padding: 5px;
+}
+ul{
+     padding: 10px;
+}
+.topsection{
+     background-image: url(./images/mobile-image-hero-1.jpg);
+     background-repeat: no-repeat;
+     background-size: 100% 100%;
+     max-width: 375px;
+     height: 350px;
+}
+.navmobile{
+     padding-top: 30px;
+     display: flex;
+}
+.menu{
+     margin-left: 10%;
+     padding: 4px;
+}
+.room{
+     text-align: center;
+     color: white;
+     margin-left: 30%;
+}
+.nextprev{
+     position: relative;
+     display: flex;
+     top: 245px;
+     width: 100vw;
+     
+}
+.next, .prev{
+     border: none;
+     outline: none;
+     background-color: black;
+     width: 45px;
+     height: 50px;
+}
+.nextimg, .previmg{
+     height: 13px;
+     width: 8px;
+}
+.aboutdark{
+     width: 100vw;
+}
+.thirdcontainerimg{
+     width: 100%;
+}
+.fifthcontainerimg{
+     width: 100%;
+}
+.aboutlight{
+     width: 100vw;
+}
