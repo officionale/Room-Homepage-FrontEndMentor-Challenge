@@ -3,19 +3,28 @@
      margin: 0;
      box-sizing: border-box;
 }
+body{
+     font-family: 'Spartan', sans-serif;
+}
+/*top section w logo and nav bar*/
 nav{
-     display: block;
+     display: none;
+     width: 100%;
      background: white;
+     position: absolute;
+     z-index: 10;
+     transition:ease-in 1s;
 }
 li{
+     text-align: center;
+     font-weight: 600;
      list-style: none;
      display: inline-block;
-     text-align: center;
-     margin-left: 5%;
+     margin-left: 3%;
      padding: 5px;
 }
 ul{
-     padding: 10px;
+     padding: 30px;
 }
 .topsection{
      background-image: url(./images/mobile-image-hero-1.jpg);
@@ -28,21 +37,22 @@ ul{
      padding-top: 30px;
      display: flex;
 }
-.menu{
+.hamburger{
      margin-left: 10%;
      padding: 4px;
 }
-.room{
-     text-align: center;
-     color: white;
-     margin-left: 30%;
+.hamburger img:hover  > nav{
+     display: block;
 }
-.nextprev{
+.room{
+     width: auto;
+     margin: 0 auto;
+}
+.nextprev-button{
      position: relative;
      display: flex;
-     top: 245px;
-     width: 100vw;
-     
+     top: 243px;
+     justify-content: flex-end;
 }
 .next, .prev{
      border: none;
@@ -55,6 +65,52 @@ ul{
      height: 13px;
      width: 8px;
 }
+/*second section just below the frist*/
+.secondcontainer{
+     height: 300px;
+     overflow: scroll;
+}
+.firstsection{
+     height: 300px;
+     
+}
+.text h1{
+     display: block;
+     width: 80%;
+     padding: 10px;
+     margin: 30px 0 0 7%;
+     font-weight: 700;
+}
+.text  p{
+     display: block;
+     width: 90%;
+     padding: 10px;
+     margin: 0 0 0 7%;
+     color: hsl(0, 0%, 63%);
+     font-size: 12px;
+     font-weight: 500;
+}
+.shop{
+     display: flex;
+}
+.shop p{
+     text-transform: uppercase;
+     color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .aboutdark{
      width: 100vw;
 }
