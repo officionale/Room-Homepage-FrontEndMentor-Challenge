@@ -8,14 +8,17 @@ body{
 }
 /*top section w logo and nav bar*/
 nav{
-     display: none;
+     display:  none;
      width: 100%;
      background: white;
      position: absolute;
-     z-index: 10;
+     z-index: 2;
      transition:ease-in 1s;
 }
-li{
+nav ul{
+     padding: 30px;
+}
+nav ul li{
      text-align: center;
      font-weight: 600;
      list-style: none;
@@ -23,8 +26,8 @@ li{
      margin-left: 3%;
      padding: 5px;
 }
-ul{
-     padding: 30px;
+.container{
+     width: 100vw;
 }
 .topsection{
      background-image: url(./images/mobile-image-hero-1.jpg);
@@ -33,28 +36,26 @@ ul{
      max-width: 375px;
      height: 350px;
 }
-.navmobile{
+.topsection .navmobile{
      padding-top: 30px;
      display: flex;
 }
-.hamburger{
+.topsection .navmobile .hamburger{
      margin-left: 10%;
      padding: 4px;
 }
-.hamburger img:hover  > nav{
-     display: block;
+ .room{
+     position: relative;
+     top: -20px;
+     left: 40%;
 }
-.room{
-     width: auto;
-     margin: 0 auto;
-}
-.nextprev-button{
+.topsection .nextprev-button{
      position: relative;
      display: flex;
-     top: 243px;
+     top: 227px;
      justify-content: flex-end;
 }
-.next, .prev{
+.topsection .nextprev-button .next, .prev{
      border: none;
      outline: none;
      background-color: black;
@@ -65,14 +66,15 @@ ul{
      height: 13px;
      width: 8px;
 }
-/*second section just below the frist*/
+/*second section w scroll*/
 .secondcontainer{
-     height: 300px;
-     overflow: scroll;
+     height: 430px;
+     padding: 20px 0;
+     overflow: hidden;
 }
-.firstsection{
-     height: 300px;
-     
+.firstsection, .secondsection, .thirdsection{
+     height: 400px;
+     line-height: 1.7;
 }
 .text h1{
      display: block;
@@ -91,35 +93,113 @@ ul{
      font-weight: 500;
 }
 .shop{
+     margin-top: 15px;
      display: flex;
+     margin-bottom: 20px;
 }
 .shop p{
      text-transform: uppercase;
      color: black;
+     letter-spacing: 10px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.aboutdark{
-     width: 100vw;
+.arrow{
+     padding: 10px;
+     width: 50%;
+     margin-right: 15%;
+     height: 35px;
 }
 .thirdcontainerimg{
      width: 100%;
+}
+.about{
+     height: 320px;
+}
+.about h3{
+     display: block;
+     width: 80%;
+     margin:  30px 0 0 7%;
+     padding: 10px;
+     text-transform: uppercase;
+     letter-spacing: 4px;
+     word-spacing: 2px;
+}
+.about p{
+     line-height: 1.7;
+     color: hsl(0, 0%, 63%);
+     width: 90%;
+     margin: 5px 0 0 7%;
+     padding: 10px;
+}
+.aboutdark{
+     width: 100vw;
 }
 .fifthcontainerimg{
      width: 100%;
 }
 .aboutlight{
      width: 100vw;
+}
+footer{
+     background-color: hsl(0, 0%, 100%);
+     padding: 3px;
+}
+footer a{
+     text-decoration: none;
+     color: hsla(0, 0%, 0%,1);
+}
+
+@media  screen and (min-width: 375px){
+     main{
+          display: grid;
+     }
+     .topsection{
+          background-image: url(./images/desktop-image-hero-1.jpg);
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+          max-width: 60vw;
+          height: 60vh;
+          flex-wrap: wrap;
+     } 
+     nav{
+          display: inline-block;
+          background: none;
+          z-index: 3;
+          color: hsla(0, 0%, 100%, 0.9);
+          margin-left: 70px;
+     }
+     nav ul li{
+          margin-left: 25px;
+     }
+     nav ul li:first-child{
+          display: none;
+     }
+     .hamburger{
+          display: none;
+     }
+     .room{
+          top: 6px;
+          left: 35px;
+     }
+     .secondcontainer{
+          width: 40vw;
+          height: 60vh;
+     }
+     .text h1{
+          width: 60%;
+     }
+     .text p{
+          width: 80%;
+     }
+     .arrow{
+          width: 140px;
+     }
+     .thirdcontainerimg{
+          width: 30vw;
+     }
+     .about{
+          width: 40vw;
+     }
+     .fifthcontainerimg{
+          width: 30vw;
+     }
 }
